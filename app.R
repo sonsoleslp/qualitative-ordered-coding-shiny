@@ -5,27 +5,10 @@ library(RColorBrewer)
 library(markdown)
 
 # Define your label list
-label_list <- c("Problem Context: Programming Concepts",
-                "Problem Context: Programming Constructs",
-                "Problem Context: Domain-specific Knowledge",
-                "Problem Specification: Rephrasing the Problem Statement",
-                "Problem Specification: Questioning Details about the Requirements",
-                "Problem Specification: Decomposing the Problem into Smaller Parts",
-                "Problem Specification: Thinking of a Corresponding Output for a Certain Input",
-                "Iterative Conversation: Based on Different Levels of Abstraction",
-                "Iterative Conversation: Based on Specificity of Prompts",
-                "Evaluate and Adapt Solution: Solution Explanation",
-                "Evaluate and Adapt Solution: Evaluation Using Test Cases",
-                "Evaluate and Adapt Solution: Problem Decomposition",
-                "Evaluate and Adapt Solution: Inspect and Adapt",
-                "SRL: Planning",
-                "SRL: Process Monitoring",
-                "SRL: Comprehension Monitoring",
-                "SRL: Reflection on Cognition",
-                "SRL: Motivation and Affect")
-# label_colors <- brewer.pal(n = length(label_list), name = "Set2")
+label_list <- c("Polite","Relevant","Irrelevant")
+
 label_colors <- brewer.pal(n = 5, name = "Set2")
-label_colors <- c(rep(label_colors[1],3),rep(label_colors[2],4),rep(label_colors[3],2),rep(label_colors[4],4),rep(label_colors[5],5))
+ 
 names(label_colors) <- label_list
 
 ui <- fluidPage(
