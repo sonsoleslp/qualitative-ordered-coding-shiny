@@ -1,0 +1,19 @@
+# RStudio-related files
+.Rproj.user/
+*.Rproj
+.Rhistory
+.RData
+.Ruserdata
+
+# Temporary files
+*.xlsx~
+*.tmp
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Generated outputs
+labeled_output.xlsx
+
